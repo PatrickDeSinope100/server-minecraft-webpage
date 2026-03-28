@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor Minecraft   </title>
+    <style>
+        /* Tipografía limpia y sin adornos */
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-image: url('img/background_jjk.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        
+        /* Contenedor plano, sin sombras difuminadas, color oscuro sólido pero con ligera transparencia */
+        .container { 
+            background-color: rgba(28, 28, 28, 0.95); 
+            padding: 50px 60px; 
+            max-width: 450px; 
+            width: 100%;
+            border-radius: 2px; /* Bordes cazsi cuadrados, más sobrio */
+            box-sizing: border-box;
+        }
+        
+        /* Encabezado minimalista */
+        header {
+            margin-bottom: 40px;
+        }
+
+        h1 { 
+            color: #ffffff; 
+            font-size: 22px;
+            font-weight: 500;
+            margin: 0 0 5px 0;
+            letter-spacing: 1px;
+        }
+        
+        .subtitle {
+            font-size: 13px;
+            color: #888888;
+            margin: 0;
+            letter-spacing: 0.5px;
+        }
+
+        /* Secciones limpias con líneas finas */
+        .block { 
+            margin-bottom: 35px; 
+        }
+
+        h2 { 
+            color: #ffffff; 
+            font-size: 14px; 
+            font-weight: normal;
+            border-bottom: 1px solid #444444; 
+            padding-bottom: 8px; 
+            margin: 0 0 15px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #b0b0b0;
+            margin: 0 0 10px 0;
+            line-height: 1.5;
+        }
+
+        /* Caja de IP plana y técnica */
+        .ip-box { 
+            font-family: monospace;
+            font-size: 15px; 
+            color: #72a5d8; /* Azul suave Ghibli/cielo */
+            background-color: #121212; 
+            padding: 12px 15px; 
+            display: block; 
+            border: 1px solid #333333;
+        }
+        
+        /* Botones y formularios sin relieve */
+        .btn, .btn-submit { 
+            display: block; 
+            background-color: #4a7c99; /* Azul pizarra/apagado */
+            color: #ffffff; 
+            padding: 12px; 
+            text-decoration: none; 
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+            transition: background-color 0.2s;
+        }
+        
+        .btn:hover, .btn-submit:hover { 
+            background-color: #3b6680; 
+        }
+        
+        input[type="text"] { 
+            width: 100%; 
+            padding: 12px 15px; 
+            margin-bottom: 15px; 
+            border: 1px solid #444444; 
+            background-color: transparent; 
+            color: #ffffff; 
+            font-family: inherit;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        
+        input[type="text"]:focus { 
+            outline: none; 
+            border-color: #72a5d8; 
+        }
+
+        /* Ocultar el formulario por defecto para mantenerlo limpio, opcional */
+        form {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MINECRAFT 1.21.1 / FORGE</h1>
+            
+        </header>
+
+        <div class="block">
+            <h2>Conexión</h2>
+            <p>Dirección del servidor:</p>
+            <div class="ip-box">supply-dow.gl.joinmc.link</div>
+        </div>
+
+        <div class="block">
+            <h2>Mods</h2>
+            <p>Para unirte al servidor es necesario tener los siguientes mods instalados.</p>
+            <a href="AQUI_PONES_TU_ENLACE_DE_DRIVE" target="_blank" rel="noopener noreferrer" class="btn">Descargar Archivos</a>
+        </div>
+
+        <div class="block">
+            <h2>Whitelist</h2>
+            <p>Ingresa tu nombre de usuario para solicitar acceso al servidor.</p>
+            <form action="https://formspree.io/f/mzdkdnkq" method="POST">
+                <input type="text" name="Username" placeholder="Usuario de Minecraft" required>
+                <button type="submit" class="btn-submit">Enviar solicitud</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
